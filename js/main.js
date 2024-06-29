@@ -18,10 +18,10 @@ let theButtons = document.querySelectorAll("#buttonHolder img"),
     theHeading = document.querySelectorAll("#headLine h1"),
     puzzleBoard = document.querySelectorAll(".puzzle-board"),
     puzzlePieces = document.querySelectorAll(".puzzle-pieces img"),
-    dropZones = document.querySelectorAll(".drop-zone"),
+    dropZones = document.querySelectorAll('.drop-zone'),
     // Store the dragged piece in a global variable for use in the handleDrop function.
     draggedPiece,
-    imgCount = 0;
+    imgcount = 0;
 
     let reset = document.querySelector("#resetBut");
 
@@ -46,16 +46,16 @@ function changeBGImage() {
 
 //Bug fix #2 should go here. It requires at most 3 lines of JavaScript code.   
 
-puzzleBoard.style.backgroundImage = 'url(images/backGround${this.id}.jpg)';
+ puzzleBoard.style.backgroundImage = `url(images/backGround${this.id}.jpg)`;
 
-let currentTarget = this.id;
+let currentid = this.id;
 
  //Make changes to the puzzle pieces.
 
- puzzlePieces[0].src = 'images/topLeft${this.id}.jpg';
- puzzlePieces[1].src = 'images/topRight${this.id}.jpg';
- puzzlePieces[2].src = 'images/bottomLeft${this.id}.jpg';
- puzzlePieces[3].src = 'images/bottomRight${this.id}.jpg';
+ puzzlePieces[0].src = `images/topLeft${this.id}.jpg`;
+ puzzlePieces[1].src = `images/topRight${this.id}.jpg`;
+ puzzlePieces[2].src = `images/bottomLeft${this.id}.jpg`;
+ puzzlePieces[3].src = `images/bottomRight${this.id}.jpg`;
 
  resetPuzzle();
 
